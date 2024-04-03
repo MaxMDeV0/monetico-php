@@ -70,7 +70,7 @@ class CancelRequestTest extends TestCase
         new CancelRequest([
             'dateTime' => Carbon::create(2019, 2, 1),
             'orderDate' => Carbon::create(2019, 1, 1),
-            'reference' => 'thisisatoolongreference',
+            'reference' => 'thisisatoolongreferencethisisatoolongreference11111',
             'language' => 'FR',
             'currency' => 'EUR',
             'amount' => 100,

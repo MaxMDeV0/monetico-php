@@ -36,7 +36,7 @@ class CancelRequest extends RecoveryRequest
             throw Exception::invalidOrderDate();
         }
 
-        if (strlen($this->reference) > 12) {
+        if (strlen($this->reference) > 50) {
             throw Exception::invalidReference($this->reference);
         }
 
