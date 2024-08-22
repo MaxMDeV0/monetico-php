@@ -114,7 +114,7 @@ class RefundRequest extends AbstractRequest
      * @param string $companyCode
      * @return array
      */
-    public function fieldsToArray(string $eptCode, string $version, string $companyCode): array
+    public function fieldsToArray(string $eptCode, string $companyCode, string $version): array // inversion de l'ordre des variables par rapport aux autres classes Request
     {
         $fields = array_merge([
             'TPE' => $eptCode,
